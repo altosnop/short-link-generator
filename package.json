@@ -4,8 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"start": "cross-env NODE_ENV=production node index.js",
 		"server": "nodemon index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"client": "npm run start --prefix client",
+		"dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
 	},
 	"author": "Oleksii Larchenko <oleksii.larchen@gmail.com>",
 	"license": "ISC",
@@ -17,6 +19,7 @@
 		"shortid": "^2.2.16"
 	},
 	"devDependencies": {
+		"concurrently": "^7.6.0",
 		"cross-env": "^7.0.3",
 		"nodemon": "^2.0.20"
 	}
