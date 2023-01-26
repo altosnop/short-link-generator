@@ -21,7 +21,7 @@ export const getLink = createAsyncThunk(
 	'links/getLinks',
 	async (link: string, { rejectWithValue }) => {
 		try {
-			const response = await axios.post<ILink>(`http://localhost:8080/short`, {
+			const response = await axios.post<ILink>(`/short`, {
 				link,
 			});
 			return response.data;
