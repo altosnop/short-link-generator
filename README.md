@@ -17,7 +17,7 @@ Create the .env file:
 ```bash
   PORT=7777
   BASE=http://localhost:PORT
-  DB_URL=
+  DB_URL=<your mongodb link>
 ```
 
 Install all packages, using commands:
