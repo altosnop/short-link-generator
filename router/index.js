@@ -17,7 +17,9 @@ router.post('/short', async (req, res) => {
 
 				if (candidate) {
 					return res.status(200).send({
-						link: candidate.shortLink,
+						linkId: candidate.linkId,
+						link: candidate.link,
+						shortLink: candidate.shortLink,
 						message: 'Successfully got short link',
 					});
 				}
@@ -28,7 +30,9 @@ router.post('/short', async (req, res) => {
 
 				await candidate.save();
 				res.status(200).send({
-					link: shortLink,
+					linkId,
+					link,
+					shortLink,
 					message: 'Successfully generated short link',
 				});
 			} catch (error) {

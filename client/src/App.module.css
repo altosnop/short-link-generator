@@ -1,0 +1,7 @@
+.div {
+	@apply container mx-auto;
+}
+
+.h1 {
+	@apply mt-10 text-center text-3xl text-white font-bold tracking-wider;
+}

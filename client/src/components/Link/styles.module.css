@@ -1,0 +1,23 @@
+.div {
+	@apply flex items-center justify-between w-full p-4 mb-5 rounded-lg dark:bg-gray-700 text-white tracking-wider relative;
+}
+
+.p {
+	@apply w-2/4;
+}
+
+.a {
+	@apply text-blue-400 font-semibold hover:text-blue-500;
+}
+
+.buttonCopy {
+	@apply px-4 py-2 rounded-lg font-semibold hover:bg-gray-800;
+}
+
+.buttonClose {
+	@apply rounded-md inline-flex items-center justify-center text-gray-400 hover:text-gray-700 absolute left-full m-2;
+}
+
+.svg {
+	@apply h-6 w-6;
+}
